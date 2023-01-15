@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto - Alura Challenges ONE</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo_img">
+                <img src="./img/logo.png" alt="Alura">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <form class="encriptador_form" id="encriptador_form">
+                    <div class="text">
+                        <textarea name="text_area" id="ingresar-texto" placeholder="Ingrese el texto aqui" required></textarea>
+                        <div class="text_info">
+                            <div class="info">
+                                <img src="./img/alerta.png" alt="">
+                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="text_btn">
+                                <input id="btn-encriptar" type="submit" value="Encriptar">
+                                <input id="btn-desencriptar" type="submit" value="Desencriptar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="text_out">
+                    <div class="text_out_content">
+                        <div class="content" id="default">
+                            <div class="text_out_img">
+                                <img src="./img/muñeco.png" alt="Muñeco">
+                            </div><p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "content invisible" id="result">
+                            <textarea id="resultado-texto" id="resultado-texto" ></textarea>
+                            <input id="btn-copy" type="submit" value="Copiar">
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+        <p>Sandy Reyna | Alura Challenges ONE © 2023</p>
+        <div class="contenedor-redes-sociales">
+            <a href="https://www.linkedin.com/in/sandy-reyna" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" class="redes-sociales" alt="Linkedin"></a>
+            <a href="https://github.com/gherrada22/" target="_blank" rel="noopener noreferrer"><img src="./img/github.png" class="redes-sociales" alt="GitHub"></a>    
+        </div>
+        
+    </footer>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+
+
+</html>
